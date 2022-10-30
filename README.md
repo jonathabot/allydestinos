@@ -21,4 +21,4 @@ Este comando vai rodar o projeto. Irá abrir uma página no: [http://localhost:3
 - Algumas máscaras e validações dos campos adicionais.
 - Resetar formulário após submissão.
 
-![Preview](public\allydestinos.png)
+![Preview](allydestinos.png)
