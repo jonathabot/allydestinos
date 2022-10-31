@@ -17,9 +17,8 @@ Este comando vai rodar o projeto. Irá abrir uma página no: [http://localhost:3
 ## Stack
 - **JavaScript** (ReactJS com libs: Axios e react-hook-form).
 
-## Coisas que precisam e serão ser implementadas:
+## Coisas que precisam e serão implementadas:
 
-- Uma popup de notificação de cadastro de interesse.
 - Responsividade da interface para mobiles.
 - Algumas máscaras e validações dos campos adicionais no formulário.
 - Resetar formulário após submissão.
