@@ -30,6 +30,9 @@ function FormDestino() {
 
   const onSubmit = e => {
     console.log(e);
+    alert(
+      `Olá, ${e.name}. O seu interesse por ${e.selectedCountry} foi adicionado no nosso sistema e em breve entraremos em contato.`
+    );
   };
 
   return (
