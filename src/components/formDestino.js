@@ -4,7 +4,7 @@ import axios from 'axios';
 import './formDestino.css';
 
 function FormDestino() {
-  const [contries, setCountries] = useState([]);
+  const [countries, setCountries] = useState([]);
   const [cities, setCities] = useState([]);
   const [filteredCities, setFilteredCities] = useState([]);
 
@@ -20,10 +20,13 @@ function FormDestino() {
     });
   }, []);
 
+  countries.sort((a, b) => a.name_ptbr.localeCompare(b.name_ptbr));
+
   function handleSelectedCountry(e) {
     setFilteredCities(
       cities.filter(city => city.country_code === e.target.value)
     );
+    filteredCities.sort((a, b) => a.name_ptbr.localeCompare(b.name_ptbr));
   }
 
   const { register, handleSubmit } = useForm();
@@ -100,7 +103,7 @@ function FormDestino() {
             onChange={handleSelectedCountry}
           >
             <option value="0">Selecione o País</option>
-            {contries.map(country => (
+            {countries.map(country => (
               <option key={country.code} value={country.code}>
                 {country.name_ptbr}
               </option>
